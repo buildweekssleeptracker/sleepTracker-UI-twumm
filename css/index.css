@@ -175,3 +175,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+header .navItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .navItems .navItemsLeft a,
+header .navItems .navItemsRight a {
+  font-size: 1.6rem;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+header .navItems .navItemsLeft {
+  padding-left: 30px;
+}
