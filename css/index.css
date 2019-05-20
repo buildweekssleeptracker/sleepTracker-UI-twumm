@@ -206,4 +206,8 @@ header .navItems .navItemsLeft {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  color: #fff;
+}
+.container .cta h2 {
+  margin-top: 10%;
 }
