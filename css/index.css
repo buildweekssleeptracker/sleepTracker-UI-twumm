@@ -171,7 +171,6 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -196,4 +195,15 @@ header .navItems .navItemsRight a {
 }
 header .navItems .navItemsLeft {
   padding-left: 30px;
+}
+.container .cta {
+  background: linear-gradient(rgba(41, 40, 40, 0.45), rgba(39, 38, 38, 0.45)), url('../img/woman-sleeping.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
