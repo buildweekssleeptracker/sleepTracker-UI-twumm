@@ -1,0 +1,22 @@
+{
+  "name": "buildweek-sleeptracker",
+  "version": "1.0.0",
+  "description": "Sleep Tracker helps you find out if you have been getting the optimal hours of sleep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildweekssleeptracker/sleeptracker-ui-twumm.git"
+  },
+  "author": "twumm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buildweekssleeptracker/sleeptracker-ui-twumm/issues"
+  },
+  "homepage": "https://github.com/buildweekssleeptracker/sleeptracker-ui-twumm#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
