@@ -256,8 +256,19 @@ header .navItems-hidden {
   align-items: center;
   color: #fff;
 }
+@media (max-width: 500px) {
+  .container .cta {
+    padding: 30px;
+    text-align: center;
+  }
+}
 .container .cta h2 {
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .container .cta h2 {
+    margin-top: 20%;
+  }
 }
 .container .features {
   margin: 50px auto;
@@ -270,6 +281,12 @@ header .navItems-hidden {
   display: flex;
   justify-content: space-between;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .container .features .features-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .features #sleep,
 .container .features #schedule,
@@ -285,8 +302,23 @@ header .navItems-hidden {
   background: #FAFAFB;
   border-radius: 20px;
 }
+@media (max-width: 500px) {
+  .container .features #sleep,
+  .container .features #schedule,
+  .container .features #track,
+  .container .features #play {
+    width: 80%;
+    margin: 20px;
+  }
+}
 .container .features h3 {
   margin: 50px 0 50px 0;
+}
+@media (max-width: 500px) {
+  .container .features h3 {
+    width: 80%;
+    text-align: center;
+  }
 }
 .container .measure {
   display: flex;

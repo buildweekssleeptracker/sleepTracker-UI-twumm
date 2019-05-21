@@ -76,8 +76,15 @@ header {
     justify-content: space-evenly;
     align-items: center;
     color: @white;
+    @media @mobile {
+      padding: 30px;
+      text-align: center;
+    }
     h2 {
       margin-top: 10%;
+      @media @mobile {
+        margin-top: 20%;
+      }
     }
   }
 
@@ -91,6 +98,10 @@ header {
       display: flex;
       justify-content: space-between;
       width: 90%;
+      @media @mobile {
+        flex-direction: column;
+        align-items: center;
+      }
     }
     #sleep, #schedule,
     #track, #play {
@@ -103,9 +114,17 @@ header {
       width: 18%;
       background: @optionalBackground;
       border-radius: 20px;
+      @media @mobile {
+        width: 80%;
+        margin: 20px;
+      }
     }
     h3 {
-      margin: 50px 0 50px 0; 
+      margin: 50px 0 50px 0;
+      @media @mobile {
+        width: 80%;
+        text-align: center;
+      }
     }
   }
 
