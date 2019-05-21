@@ -214,7 +214,8 @@ header .navItems .navItemsLeft {
 .container .features {
   margin: 30px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 90%;
 }
 .container .features #sleep,
 .container .features #schedule,
@@ -229,4 +230,23 @@ header .navItems .navItemsLeft {
   width: 18%;
   background: #FAFAFB;
   border-radius: 20px;
+}
+.container .measure {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+  padding: 0 5%;
+  background: #FAFAFB;
+}
+.container .measure #measureText {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .measure #measureImage {
+  padding: 15px 0 15px 15px;
+}
+.container .measure #measureImage img {
+  border-radius: 35px;
 }

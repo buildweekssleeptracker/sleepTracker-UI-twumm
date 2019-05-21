@@ -46,7 +46,8 @@ header {
   .features {
     margin: 30px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 90%;
     #sleep, #schedule,
     #track, #play {
       display: flex;
@@ -58,6 +59,27 @@ header {
       width: 18%;
       background: @optionalBackground;
       border-radius: 20px;
+    }
+  }
+
+  .measure {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    // width: 90%;
+    padding: 0 5%;
+    background: @optionalBackground;
+    #measureText {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    #measureImage {
+      padding: 15px 0 15px 15px;
+      img {
+        border-radius: 35px;
+      }
     }
   }
 }
