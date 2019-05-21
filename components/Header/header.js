@@ -18,7 +18,13 @@ logoText.textContent = 'SleepTracker';
 // Create div for navItems, navItemsLeft and navItemsRight
 const navItems = document.createElement('div');
 navItems.classList.add('navItems');
-navItems.classList.add('navItems-hidden');
+// Add event listener to add or remove hamburger menu
+window.addEventListener('load', () => {
+  window.innerWidth <= 500 ? navItems.classList.add('navItems-hidden') : null;
+})
+window.addEventListener('resize', () => {
+  window.innerWidth <= 500 ? navItems.classList.add('navItems-hidden') : navItems.classList.remove('navItems-hidden');
+})
 const navItemsLeft = document.createElement('div');
 navItemsLeft.classList.add('navItemsLeft');
 const navItemsRight = document.createElement('div');
