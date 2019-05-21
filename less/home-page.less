@@ -134,14 +134,37 @@ header {
     margin: 30px auto;
     padding: 0 5%;
     background: @optionalBackground;
+    @media @mobile {
+      flex-direction: column;
+      // padding: 0;
+    }
     #measureText {
       padding-right: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      @media @mobile {
+        order: 1;
+        padding: 0;
+      }
+      h3 {
+        @media @mobile {
+          margin-bottom: 30px;
+        }
+      }
+      article {
+        @media @mobile {
+          margin-bottom: 30px;
+        }
+      }
     }
     #measureImage {
       padding: 15px 0 15px 15px;
+      @media @mobile {
+        order: 0;
+        padding: 0;
+        margin-bottom: 30px;
+      }
       img {
         border-radius: 35px;
       }
