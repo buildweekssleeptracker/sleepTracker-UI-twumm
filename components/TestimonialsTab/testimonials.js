@@ -1,9 +1,12 @@
 class Testimonials {
-  constructor(testimonial) {
-
+  constructor(testimonialsCarousel) {
+    this.testimonialsCarousel = testimonialsCarousel;
+    // Get all testimonials in the testimonials class
+    this.testimonials = testimonialsCarousel.querySelectorAll('.testimonial');
+    
   }
 }
 
 // Get articles section from document
-const testimonials = document.querySelector('.testimonials');
-
+const testimonialsCarousel = document.querySelector('.testimonials');
+new Testimonials(testimonialsCarousel);
