@@ -7,7 +7,6 @@ header {
   @media @mobile {
     flex-direction: column;
     margin: 0;
-    // padding: 10px;
     align-items: normal;
   }
   .logo {
@@ -29,7 +28,8 @@ header {
     width: 100%;
     @media @mobile {
       flex-direction: column;
-      display: none;
+      
+      
     }
     .navItemsLeft,
     .navItemsRight {
@@ -55,6 +55,9 @@ header {
         padding-left: 0;
       }
     }
+  }
+  .navItems-hidden {
+    display: none;
   }
 }
 
@@ -110,7 +113,6 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 30px auto;
-    // width: 90%;
     padding: 0 5%;
     background: @optionalBackground;
     #measureText {

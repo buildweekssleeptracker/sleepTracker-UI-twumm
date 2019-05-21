@@ -209,7 +209,6 @@ header .navItems {
 @media (max-width: 500px) {
   header .navItems {
     flex-direction: column;
-    display: none;
   }
 }
 header .navItems .navItemsLeft a,
@@ -241,6 +240,9 @@ header .navItems .navItemsLeft {
   header .navItems .navItemsLeft {
     padding-left: 0;
   }
+}
+header .navItems-hidden {
+  display: none;
 }
 .container .cta {
   background: linear-gradient(rgba(41, 40, 40, 0.45), rgba(39, 38, 38, 0.45)), url('../img/woman-sleeping.jpg');
