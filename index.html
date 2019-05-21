@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SleepTracker</title>
   <link rel="stylesheet" href="./css/index.css">
+  <script src="./components/Header/header.js" async></script>
+  <script src="./components/ArticlesTab/articles.js" async></script>
 </head>
+
 <body>
   <header>
-    <div class="logo"><h2>SleepTracker</h2></div>
-    <div class="navItems">
-      <div class="navItemsLeft">
-        <a href="#">Why SleepTracker</a>
-        <a href="#">Dashboard</a>
-        <a href="#">About</a>
-      </div>
-      <div class="navItemsRight">
-        <a href="#">Sign Up</a>      
-        <a href="#">Sign In</a>        
-      </div>
-    </div>
   </header>
   <div class="container">
     <section class="cta">
@@ -27,31 +19,113 @@
       <h5>Get minute by minute breakdown of how you sleep each day.</h5>
       <button>Get Started</button>
     </section>
+
     <section class="features">
-      <div id="sleep">
-        <img src="" alt="Moon sleep">
-        <h4>Sleep</h4>
-        <p>Wake up feeling refreshed</p>
+      <div class="features-tabs">
+        <div id="sleep">
+          <img src="./img/moon.png" width="60" height="60" alt="Moon sleep">
+          <h5>Sleep</h5>
+          <p>Wake up feeling refreshed</p>
+        </div>
+        <div id="schedule">
+          <img src="./img/clock.png" width="60" height="60" alt="Clock">
+          <h5>Schedule</h5>
+          <p>Get reminders on when to sleep</p>
+        </div>
+        <div id="track">
+          <img src="./img/analysis.png" width="60" height="60" alt="Analyse">
+          <h5>Sleep</h5>
+          <p>Track all the stages of sleep</p>
+        </div>
+        <div id="play">
+          <img src="./img/play-button.png" width="60" height="60" alt="Moon sleep">
+          <h5>Play</h5>
+          <p>Press to Play Music</p>
+        </div>
       </div>
-      <div id="schedule">
-        <img src="" alt="Clock">
-        <h4>schedule</h4>
-        <p>Get reminders on when to sleep</p>
+      <h3>Features that are guaranteed to improve your sleep</h3>
+    </section>
+
+    <section class="measure">
+      <div id="measureText">
+        <h3>Go zzz whiles we crunch the data</h3>
+        <article>
+          <h5>Some title</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris cursus id risus et sagittis.
+            Nullam sed semper odio. Ut facilisis magna
+            id nunc viverra iaculis.</p>
+        </article>
+        <article>
+          <h5>Some title</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris cursus id risus et sagittis.
+            Nullam sed semper odio. Ut facilisis magna
+            id nunc viverra iaculis.</p>
+        </article>
       </div>
-      <div id="track">
-        <img src="" alt="Analyse">
-        <h4>Sleep</h4>
-        <p>Track all the stages of sleep</p>
-      </div>
-      <div id="play">
-        <img src="" alt="Moon sleep">
-        <h4>Play</h4>
-        <p>Press to Play. Music stops when you sleep.</p>
+      <div id="measureImage">
+        <img src="./img/lady-sleep-smiling.jpg" alt="Lady smiling in sleep">
       </div>
     </section>
-    <section class="measure"></section>
-    <section class="articles"></section>
+
+    <section class="articles">
+      <div class="left-button"><</div>
+      <article class="testimonial">
+        <img src="./img/articles-boss.png" width="80" height="80" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris cursus id risus et sagittis.
+            Nullam sed semper odio. Ut facilisis magna
+            id nunc viverra iaculis.</p>
+        <h6>User Name</h6>
+      </article>
+      <article class="testimonial">
+        <img src="./img/articles-boy.png" width="80" height="80" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris cursus id risus et sagittis.
+            Nullam sed semper odio. Ut facilisis magna
+            id nunc viverra iaculis.</p>
+        <h6>User Name</h6>
+      </article>
+      <article class="testimonial">
+        <img src="./img/articles-man.png" width="80" height="80" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris cursus id risus et sagittis.
+            Nullam sed semper odio. Ut facilisis magna
+            id nunc viverra iaculis.</p>
+        <h6>User Name</h6>
+      </article>
+      <article class="testimonial">
+        <img src="./img/articles-manager.png" width="80" height="80" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris cursus id risus et sagittis.
+            Nullam sed semper odio. Ut facilisis magna
+            id nunc viverra iaculis.</p>
+        <h6>User Name</h6>
+      </article>
+      <div class="right-button">></div>
+    </section>
   </div>
-  <footer></footer>
+  <footer>
+    <div class="footerTop">
+      <div class="social">
+        <img src="./img/Facebook.png" alt="facebook">
+        <img src="./img/Twitter.png" alt="twitter">
+        <img src="./img/Instagram.png" alt="instagram">
+        <img src="./img/Snapchat.png" alt="snapchat">
+      </div>
+      <div class="get-updates">
+        <form>
+          <input type="text" placeholder="Get updates from SleepTracker">
+          <button type="submit">Yes!</button>
+        </form>
+      </div>
+    </div>
+    <h2 class="footerLogo">SleepTracker</h2>
+    <h6 class="copyright">
+      All Content Copyright © SleepTracker Co. Ltd.
+    </h6>
+  </footer>
 </body>
+
 </html>

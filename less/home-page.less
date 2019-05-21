@@ -42,4 +42,53 @@ header {
       margin-top: 10%;
     }
   }
+
+  .features {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    .features-tabs {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+    }
+    #sleep, #schedule,
+    #track, #play {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      height: 240px;
+      width: 18%;
+      background: @optionalBackground;
+      border-radius: 20px;
+    }
+    h3 {
+      margin: 50px 0 50px 0; 
+    }
+  }
+
+  .measure {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    // width: 90%;
+    padding: 0 5%;
+    background: @optionalBackground;
+    #measureText {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    #measureImage {
+      padding: 15px 0 15px 15px;
+      img {
+        border-radius: 35px;
+      }
+    }
+  }
 }
