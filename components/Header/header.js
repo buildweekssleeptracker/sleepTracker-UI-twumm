@@ -3,12 +3,21 @@ const header = document.querySelector('header');
 // Create div to contain the logo
 const logoElement = document.createElement('div');
 logoElement.classList.add('logo');
+// Create div for hamburger menu
+const hamburgerMenu = document.createElement('div');
+hamburgerMenu.classList.add('hamburger-menu');
+const hamburgerMenuImage = document.createElement('img');
+hamburgerMenuImage.src = './img/menu-button.png';
+hamburgerMenuImage.alt = 'Menu';
+hamburgerMenuImage.setAttribute('style', 'width: 30px')
+hamburgerMenu.setAttribute('style', 'display: none;')
+hamburgerMenu.append(hamburgerMenuImage);
 // Create h2 element for logo text
 const logoText = document.createElement('h2');
 logoText.textContent = 'SleepTracker';
 // Create div for navItems, navItemsLeft and navItemsRight
 const navItems = document.createElement('div');
-navItems.classList.add('navItems')
+navItems.classList.add('navItems');
 const navItemsLeft = document.createElement('div');
 navItemsLeft.classList.add('navItemsLeft');
 const navItemsRight = document.createElement('div');
@@ -34,6 +43,7 @@ signIn.href = '#';
 header.append(logoElement);
 header.append(navItems);
 logoElement.append(logoText);
+logoElement.append(hamburgerMenu);
 navItems.append(navItemsLeft);
 navItems.append(navItemsRight);
 // Append nav items
