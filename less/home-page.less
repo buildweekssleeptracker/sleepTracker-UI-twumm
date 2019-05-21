@@ -4,10 +4,33 @@ header {
   align-items: center;
   margin: 15px;
   line-height: 1.4;
+  @media @mobile {
+    flex-direction: column;
+    margin: 0;
+    // padding: 10px;
+    align-items: normal;
+  }
+  .logo {
+    @media @mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+    }
+    .hamburger-menu {
+      @media @mobile {
+        display: block !important;
+      }
+    }
+  }
   .navItems {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media @mobile {
+      flex-direction: column;
+      display: none;
+    }
     .navItemsLeft,
     .navItemsRight {
       a {
@@ -15,10 +38,22 @@ header {
         margin-right: 15px;
         text-decoration: none;
         color: inherit;
+        @media @mobile {
+          border-top: 1px solid @secondaryColor;
+          width: 100%;
+          padding: 15px;
+        }
+      }
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
       }
     }
     .navItemsLeft {
       padding-left: 30px;
+      @media @mobile {
+        padding-left: 0;
+      }
     }
   }
 }
