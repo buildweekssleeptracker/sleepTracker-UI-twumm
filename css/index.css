@@ -378,6 +378,11 @@ header .navItems-hidden {
   overflow: hidden;
   margin: 16px auto;
 }
+@media (max-width: 500px) {
+  .container .articles {
+    width: 100%;
+  }
+}
 .container .articles .left-button,
 .container .articles .right-button {
   background-color: #fff;
