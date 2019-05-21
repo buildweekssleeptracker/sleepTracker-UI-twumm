@@ -9,7 +9,7 @@ hamburgerMenu.classList.add('hamburger-menu');
 const hamburgerMenuImage = document.createElement('img');
 hamburgerMenuImage.src = './img/menu-button.png';
 hamburgerMenuImage.alt = 'Menu';
-hamburgerMenuImage.setAttribute('style', 'width: 30px')
+hamburgerMenuImage.setAttribute('style', 'width: 30px; cursor: pointer;')
 hamburgerMenu.setAttribute('style', 'display: none;')
 hamburgerMenu.append(hamburgerMenuImage);
 // Create h2 element for logo text
@@ -18,6 +18,7 @@ logoText.textContent = 'SleepTracker';
 // Create div for navItems, navItemsLeft and navItemsRight
 const navItems = document.createElement('div');
 navItems.classList.add('navItems');
+navItems.classList.add('navItems-hidden');
 const navItemsLeft = document.createElement('div');
 navItemsLeft.classList.add('navItemsLeft');
 const navItemsRight = document.createElement('div');
@@ -52,3 +53,9 @@ navItemsLeft.append(dashboard);
 navItemsLeft.append(about);
 navItemsRight.append(signUp);
 navItemsRight.append(signIn);
+
+// Event handlers
+hamburgerMenuImage.addEventListener('click', () => {
+  const navItemsClassList = Array.from(navItems.classList).filter(classItem => classItem === 'navItems-hidden');
+  navItemsClassList.indexOf('navItems-hidden') >= 0 ? navItems.classList.toggle('navItems-hidden') : navItems.classList.add('navItems-hidden');
+});
