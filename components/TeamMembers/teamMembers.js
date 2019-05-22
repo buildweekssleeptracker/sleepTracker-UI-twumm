@@ -62,7 +62,8 @@ class TeamMember {
     this.memberDiv = document.createElement('div');
     this.profileImage = document.createElement('img');
     this.memberContent = document.createElement('div');
-    this.memberName = document.createElement('h6');
+    this.memberName = document.createElement('h5');
+    this.memberRole = document.createElement('h6');
     this.memberDescription = document.createElement('p');
     this.memberContact = document.createElement('div');
     this.socialLink = document.createElement('a');
@@ -79,11 +80,12 @@ class TeamMember {
     this.profileImage.alt = this.member.name;
     this.memberContent.classList.add('member-contact');
     this.memberName.textContent = this.member.name;
+    this.memberRole.textContent = this.member.role;
     this.memberDescription.textContent = this.member.description;
     // Append elements in member div
-    this.memberDiv.append(this.profileImage)
-    this.memberContent.append(this.memberName)
-    this.memberContent.append(this.memberDescription)
+    this.memberDiv.append(this.profileImage);
+    this.memberContent.append(this.memberName);
+    this.memberContent.append(this.memberDescription);
   }
 
   constructMemberContact() {
@@ -102,9 +104,10 @@ class TeamMember {
       this.socialLink.append(this.socialLogo)
       this.memberContact.append(this.socialLink)
     }
-
+    this.memberContent.append(this.memberContact);
   }
 }
 
 const teamMembers = teamMembersList.map(member => new TeamMember(member));
-// teamMembers.forEach(memberElement => aboutUsSection.appendChild(memberElement));
+teamMembers.forEach(memberElement => aboutUsSection.appendChild(memberElement.memberDiv));
+teamMembers.forEach(memberElement => console.log(memberElement));
