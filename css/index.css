@@ -175,76 +175,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px;
-  line-height: 1.4;
-}
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    margin: 0;
-    align-items: normal;
-  }
-}
-@media (max-width: 500px) {
-  header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-  }
-}
-@media (max-width: 500px) {
-  header .logo .hamburger-menu {
-    display: block !important;
-  }
-}
-header .navItems {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  header .navItems {
-    flex-direction: column;
-  }
-}
-header .navItems .navItemsLeft a,
-header .navItems .navItemsRight a {
-  font-size: 1.6rem;
-  margin-right: 15px;
-  text-decoration: none;
-  color: inherit;
-}
-@media (max-width: 500px) {
-  header .navItems .navItemsLeft a,
-  header .navItems .navItemsRight a {
-    border-top: 1px solid #9984d4;
-    width: 100%;
-    padding: 15px;
-  }
-}
-@media (max-width: 500px) {
-  header .navItems .navItemsLeft,
-  header .navItems .navItemsRight {
-    display: flex;
-    flex-direction: column;
-  }
-}
-header .navItems .navItemsLeft {
-  padding-left: 30px;
-}
-@media (max-width: 500px) {
-  header .navItems .navItemsLeft {
-    padding-left: 0;
-  }
-}
-header .navItems-hidden {
-  display: none;
-}
 .container .cta {
   background: linear-gradient(rgba(41, 40, 40, 0.45), rgba(39, 38, 38, 0.45)), url('../img/woman-sleeping.jpg');
   background-repeat: no-repeat;
@@ -378,6 +308,77 @@ header .navItems-hidden {
 }
 .container .measure #measureImage img {
   border-radius: 35px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  line-height: 1.4;
+  border-bottom: 1px solid #9984d4;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    margin: 0;
+    align-items: normal;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
+@media (max-width: 500px) {
+  header .logo .hamburger-menu {
+    display: block !important;
+  }
+}
+header .navItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  header .navItems {
+    flex-direction: column;
+  }
+}
+header .navItems .navItemsLeft a,
+header .navItems .navItemsRight a {
+  font-size: 1.6rem;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 500px) {
+  header .navItems .navItemsLeft a,
+  header .navItems .navItemsRight a {
+    border-top: 1px solid #9984d4;
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media (max-width: 500px) {
+  header .navItems .navItemsLeft,
+  header .navItems .navItemsRight {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .navItems .navItemsLeft {
+  padding-left: 30px;
+}
+@media (max-width: 500px) {
+  header .navItems .navItemsLeft {
+    padding-left: 0;
+  }
+}
+header .navItems-hidden {
+  display: none;
 }
 .container .testimonials {
   display: flex;
@@ -529,7 +530,7 @@ footer .copyright {
   display: flex;
   align-items: flex-start;
   width: 46%;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .about-us .member img {
   width: 100px;
