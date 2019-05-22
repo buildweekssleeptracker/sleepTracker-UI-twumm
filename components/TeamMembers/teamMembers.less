@@ -6,13 +6,18 @@
   width: 85%;
   margin: 50px auto;
   @media @mobile {
-    
+    flex-direction: column;
+    // width: 100%;
   }
   .member {
     display: flex;
     align-items: flex-start;
     width: 46%;
     margin-bottom: 60px;
+    @media @mobile {
+      width: 100%;
+      align-items: center;
+    }
     img {
       width: 100px;
       border-radius: 60%;
@@ -32,6 +37,9 @@
         a img {
           width: 30px;
           margin-right: 10px;
+          @media @mobile {
+            margin-top: 20px;
+          }
         }
       }
     }
