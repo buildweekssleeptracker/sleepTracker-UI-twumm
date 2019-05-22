@@ -83,7 +83,22 @@ class TeamMember {
     
   }
 
-  
+  constructMemberContact() {
+    this.memberContact.classList.add('member-contact');
+    if (this.member.social.github) {
+      this.socialLink.href = this.member.social.github;
+      this.socialLogo.src = './img/Github.png';
+      this.socialLink.append(this.socialLogo)
+      this.memberContact.append(this.socialLink)
+    }
+    if (this.member.social.twitter) {
+      this.socialLink.href = this.member.social.twitter;
+      this.socialLogo.src = './img/Twitter.png';
+      this.socialLink.append(this.socialLogo)
+      this.memberContact.append(this.socialLink)
+    }
+    
+  }
 }
 
 const teamMembers = teamMembersList.map(member => new TeamMember(member));
