@@ -87,6 +87,8 @@ class TeamMember {
     this.memberContent.append(this.memberName);
     this.memberContent.append(this.memberRole);
     this.memberContent.append(this.memberDescription);
+
+    this.memberDiv.append(this.memberContent);
   }
 
   constructMemberContact() {
