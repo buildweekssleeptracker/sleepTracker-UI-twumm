@@ -60,7 +60,15 @@ const aboutUsSection = document.querySelector('.about-us');
 
 class TeamMember {
   constructor(member) {
-
+    this.member = member;
+    // Create various element for team member sections
+    this.profileImage = document.createElement('img');
+    this.memberContent = document.createElement('div');
+    this.memberName = document.createElement('h6');
+    this.memberDescription = document.createElement('p');
+    this.memberContact = document.createElement('div');
+    this.socialLink = document.createElement('a');
+    this.socialLogo = document.createElement('img');
   }
 }
 
