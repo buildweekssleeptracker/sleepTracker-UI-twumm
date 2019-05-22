@@ -357,7 +357,7 @@ header {
   line-height: 1.4;
   border-bottom: 1px solid #9984d4;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header {
     flex-direction: column;
     margin: 0;
@@ -365,7 +365,7 @@ header {
     padding: 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .logo {
     display: flex;
     align-items: center;
@@ -373,7 +373,7 @@ header {
     padding: 15px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .logo .hamburger-menu {
     display: block !important;
   }
@@ -383,7 +383,7 @@ header .navItems {
   justify-content: space-between;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems {
     flex-direction: column;
   }
@@ -395,7 +395,7 @@ header .navItems .navItemsRight a {
   text-decoration: none;
   color: inherit;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft a,
   header .navItems .navItemsRight a {
     border-top: 1px solid #9984d4;
@@ -403,7 +403,7 @@ header .navItems .navItemsRight a {
     padding: 15px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft,
   header .navItems .navItemsRight {
     display: flex;
@@ -413,7 +413,7 @@ header .navItems .navItemsRight a {
 header .navItems .navItemsLeft {
   padding-left: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft {
     padding-left: 0;
   }
