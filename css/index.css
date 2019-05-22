@@ -227,6 +227,9 @@ img {
   font-family: inherit;
   border: none;
 }
+.container .cta button:hover {
+  color: #9984d4;
+}
 .container .features {
   margin: 50px auto;
   display: flex;
@@ -321,10 +324,10 @@ img {
   }
 }
 .container .measure #measureText article {
-  font-family: 'inherit';
+  font-family: 'Roboto';
 }
 .container .measure #measureText article h5 {
-  font-family: 'inherit';
+  font-family: 'Roboto';
   font-weight: bold;
   margin-bottom: 10px;
 }
