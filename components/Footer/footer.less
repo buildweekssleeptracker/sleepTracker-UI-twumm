@@ -6,6 +6,9 @@ footer {
   height: 200px;
   border-top: 1px solid @secondaryColor;
   padding-bottom: 20px;
+  @media @mobile {
+    padding-top: 70px;
+  }
   .footerTop {
     display: flex;
     justify-content: space-between;
@@ -32,7 +35,8 @@ footer {
     }
     .get-updates {
       @media @mobile {
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
       }
       input {
         width: 200px;

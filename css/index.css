@@ -202,11 +202,17 @@ img {
 @media (max-width: 500px) {
   .container .cta h2 {
     margin-top: 20%;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    width: 100%;
   }
 }
 .container .cta h5 {
   font-family: inherit;
+}
+@media (max-width: 500px) {
+  .container .cta h5 {
+    font-size: 1.6rem;
+  }
 }
 .container .cta button {
   width: 145px;
@@ -423,6 +429,8 @@ header .navItems-hidden {
   overflow: hidden;
   margin: 16px auto;
   font-family: 'Roboto';
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 @media (max-width: 500px) {
   .container .testimonials {
@@ -490,6 +498,11 @@ footer {
   border-top: 1px solid #9984d4;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  footer {
+    padding-top: 70px;
+  }
+}
 footer .footerTop {
   display: flex;
   justify-content: space-between;
@@ -521,7 +534,8 @@ footer .footerTop .social img {
 }
 @media (max-width: 500px) {
   footer .footerTop .get-updates {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 footer .footerTop .get-updates input {
