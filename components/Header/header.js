@@ -15,6 +15,8 @@ hamburgerMenu.append(hamburgerMenuImage);
 // Create h2 element for logo text
 const logoText = document.createElement('h2');
 logoText.textContent = 'SleepTracker';
+logoText.style.cursor = 'pointer';
+logoText.addEventListener('click', () => document.location = 'index.html');
 // Create div for navItems, navItemsLeft and navItemsRight
 const navItems = document.createElement('div');
 navItems.classList.add('navItems');
