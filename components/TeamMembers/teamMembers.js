@@ -88,16 +88,18 @@ class TeamMember {
     if (this.member.social.github) {
       this.socialLink.href = this.member.social.github;
       this.socialLogo.src = './img/Github.png';
+      this.socialLogo.alt = 'Social';
       this.socialLink.append(this.socialLogo)
       this.memberContact.append(this.socialLink)
     }
     if (this.member.social.twitter) {
       this.socialLink.href = this.member.social.twitter;
       this.socialLogo.src = './img/Twitter.png';
+      this.socialLogo.alt = 'Social';
       this.socialLink.append(this.socialLogo)
       this.memberContact.append(this.socialLink)
     }
-    
+
   }
 }
 
