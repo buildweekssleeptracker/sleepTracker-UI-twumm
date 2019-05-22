@@ -2,7 +2,7 @@ const teamMembersList = [
   {
     "name": "Martin Twum Mensah",
     "role": "User Interface Developer",
-    "description": "A product manager/web developer with experience in building web applications using Python, JavaScript(Node.js, Express) and HTML/CSS; with an in-depth experience of managing cross-functional teams over 4 years on various projects.",
+    "description": "A product manager/web developer with experience in building web applications using Python, JavaScript(Node.js, Express) and HTML/CSS. Martin works on getting the marketing website of SleepTracker up and running. He is in charge of web development.",
     "profileImage": './img/team/martin.JPG',
     "social": {"github": "https://github.com/twumm", "twitter": "https://twitter.com/twumm"},
     "github": "https://github.com/twumm",

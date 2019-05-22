@@ -604,6 +604,7 @@ footer .copyright {
 .about-us .member .member-content p {
   font-size: 1.3rem;
   line-height: 2;
+  margin-bottom: 30px;
 }
 .about-us .member .member-content .member-contact a img {
   width: 30px;
