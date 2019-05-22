@@ -80,7 +80,10 @@ class TeamMember {
     this.memberContent.classList.add('member-contact');
     this.memberName.textContent = this.member.name;
     this.memberDescription.textContent = this.member.description;
-    
+    // Append elements in member div
+    this.memberDiv.append(this.profileImage)
+    this.memberContent.append(this.memberName)
+    this.memberContent.append(this.memberDescription)
   }
 
   constructMemberContact() {
