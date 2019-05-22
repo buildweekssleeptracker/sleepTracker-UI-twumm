@@ -85,6 +85,7 @@ class TeamMember {
     // Append elements in member div
     this.memberDiv.append(this.profileImage);
     this.memberContent.append(this.memberName);
+    this.memberContent.append(this.memberRole);
     this.memberContent.append(this.memberDescription);
   }
 
