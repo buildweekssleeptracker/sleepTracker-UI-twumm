@@ -67,8 +67,10 @@ class TeamMember {
     this.memberDescription = document.createElement('p');
     this.memberDescription.setAttribute('style', 'height: 106px;')
     this.memberContact = document.createElement('div');
-    this.socialLink = document.createElement('a');
-    this.socialLogo = document.createElement('img');
+    this.githubLink = document.createElement('a');
+    this.githubLogo = document.createElement('img');
+    this.twitterLink = document.createElement('a');
+    this.twitterLogo = document.createElement('img');
 
     this.memberDiv.classList.add('member');
     // Call methods to create divs
@@ -95,18 +97,18 @@ class TeamMember {
   constructMemberContact() {
     this.memberContact.classList.add('member-contact');
     if (this.member.social.github) {
-      this.socialLink.href = this.member.social.github;
-      this.socialLogo.src = './img/Github.png';
-      this.socialLogo.alt = 'Social';
-      this.socialLink.append(this.socialLogo)
-      this.memberContact.append(this.socialLink)
+      this.githubLink.href = this.member.social.github;
+      this.githubLogo.src = './img/Github.png';
+      this.githubLogo.alt = 'Social';
+      this.githubLink.append(this.githubLogo)
+      this.memberContact.append(this.githubLink)
     }
     if (this.member.social.twitter) {
-      this.socialLink.href = this.member.social.twitter;
-      this.socialLogo.src = './img/Twitter.png';
-      this.socialLogo.alt = 'Social';
-      this.socialLink.append(this.socialLogo)
-      this.memberContact.append(this.socialLink)
+      this.twitterLink.href = this.member.social.twitter;
+      this.twitterLogo.src = './img/Twitter.png';
+      this.twitterLogo.alt = 'Social';
+      this.twitterLink.append(this.twitterLogo)
+      this.memberContact.append(this.twitterLink)
     }
     this.memberContent.append(this.memberContact);
   }
