@@ -5,8 +5,15 @@ class Testimonials {
     this.testimonials = testimonialsCarousel.querySelectorAll('.testimonial');
     
     // Get left and right buttons
-    this.leftButton = this.testimonialsCarousel.querySelector('left-button');
-    this.rightButton = this.testimonialsCarousel.querySelector('right-button');
+    this.leftButton = testimonialsCarousel.querySelector('.left-button');
+    this.rightButton = testimonialsCarousel.querySelector('.right-button');
+    console.log(this.leftButton)
+    // Set current index to first testimonial in this.testimonials
+    this.currentIndex = 0;
+    this.testimonials[this.currentIndex].style.display = 'block';
+    // Add click events to the left and right buttons
+    this.leftButton.addEventListener('click', () => this.showLeftTestimonial());
+    this.rightButton.addEventListener('click', () => this.showRightTestimonial());
   }
 }
 
