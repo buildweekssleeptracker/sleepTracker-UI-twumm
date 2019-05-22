@@ -65,6 +65,7 @@ class TeamMember {
     this.memberName = document.createElement('h5');
     this.memberRole = document.createElement('h6');
     this.memberDescription = document.createElement('p');
+    this.memberDescription.setAttribute('style', 'height: 106px;')
     this.memberContact = document.createElement('div');
     this.socialLink = document.createElement('a');
     this.socialLogo = document.createElement('img');
