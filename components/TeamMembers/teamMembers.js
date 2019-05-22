@@ -78,7 +78,7 @@ class TeamMember {
   constructMember() {
     this.profileImage.src = this.member.profileImage;
     this.profileImage.alt = this.member.name;
-    this.memberContent.classList.add('member-contact');
+    this.memberContent.classList.add('member-content');
     this.memberName.textContent = this.member.name;
     this.memberRole.textContent = this.member.role;
     this.memberDescription.textContent = this.member.description;
