@@ -4,6 +4,7 @@ const teamMembersList = [
     "role": "User Interface Developer",
     "description": "A product manager/web developer with experience in building web applications using Python, JavaScript(Node.js, Express) and HTML/CSS; with an in-depth experience of managing cross-functional teams over 4 years on various projects.",
     "profileImage": './img/team/martin.JPG',
+    "social": {"github": "https://github.com/twumm", "twitter": "https://twitter.com/twumm"},
     "github": "https://github.com/twumm",
     "twitter": "https://twitter.com/twumm"
 },
@@ -12,6 +13,7 @@ const teamMembersList = [
     "role": "User Interface Developer",
     "description": "Here",
     "profileImage": './img/team/elise.JPG',
+    "social": {"github": "https://github.com/espain16", "twitter": ""},
     "github": "https://github.com/espain16",
     "twitter": ""
   },
@@ -20,6 +22,7 @@ const teamMembersList = [
     "role": "User Interface Developer",
     "description": "Here",
     "profileImage": './img/team/cesar.JPG',
+    "social": {"github": "https://github.com/espain16", "twitter": ""},
     "github": "https://github.com/espain16",
     "twitter": ""
   },
@@ -28,6 +31,7 @@ const teamMembersList = [
     "role": "Frontend Architect",
     "description": "Here",
     "profileImage": './img/team/alfonso.JPG',
+    "social": {"github": "https://github.com/alfonsog714", "twitter": ""},
     "github": "https://github.com/alfonsog714",
     "twitter": ""
   },
@@ -36,6 +40,7 @@ const teamMembersList = [
     "role": "Backend Engineer",
     "description": "Here",
     "profileImage": './img/team/duc.JPG',
+    "social": {"github": "https://github.com/vud531", "twitter": ""},
     "github": "https://github.com/vud531",
     "twitter": ""
   },
@@ -44,8 +49,7 @@ const teamMembersList = [
     "role": "Backend Engineer",
     "description": "Here",
     "profileImage": './img/team/brandon.JPG',
-    "github": "",
-    "twitter": ""
+    "social": {"github": "", "twitter": ""}
   }
 ]
 
@@ -67,6 +71,16 @@ class TeamMember {
     this.memberDiv.classList.add('member');
     // Call methods to create divs
     this.constructMember();
+    this.constructMemberContact()
+  }
+
+  constructMember() {
+    this.profileImage.src = this.member.profileImage;
+    this.profileImage.alt = this.member.name;
+    this.memberContent.classList.add('member-contact');
+    this.memberName.textContent = this.member.name;
+    this.memberDescription.textContent = this.member.description;
+    
   }
 
   
