@@ -43,10 +43,10 @@ about.textContent = 'About';
 about.href = 'about.html';
 const signUp = document.createElement('a');
 signUp.textContent = 'Sign Up';
-signUp.href = '#';
+signUp.href = 'https://festive-nobel-517193.netlify.com/';
 const signIn = document.createElement('a');
 signIn.textContent = 'Sign In';
-signIn.href = '#';
+signIn.href = 'https://festive-nobel-517193.netlify.com/';
 
 // Append elements to html
 header.append(logoElement);
