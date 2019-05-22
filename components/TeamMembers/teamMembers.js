@@ -1,4 +1,5 @@
-const teamMembers = {
+const teamMembersList = [
+  {
   "martin": {
     "name": "Martin Twum Mensah",
     "role": "User Interface Developer",
@@ -6,7 +7,9 @@ const teamMembers = {
     "profileImage": './img/team/martin.JPG',
     "github": "https://github.com/twumm",
     "twitter": "https://twitter.com/twumm"
-  },
+  }
+},
+{
   "elise": {
     "name": "Elise Spain",
     "role": "User Interface Developer",
@@ -14,7 +17,8 @@ const teamMembers = {
     "profileImage": './img/team/elise.JPG',
     "github": "https://github.com/espain16",
     "twitter": ""
-  },
+  }},
+  {
   "cesar": {
     "name": "Cesar Aponte",
     "role": "User Interface Developer",
@@ -22,7 +26,8 @@ const teamMembers = {
     "profileImage": './img/team/cesar.JPG',
     "github": "https://github.com/espain16",
     "twitter": ""
-  },
+  }},
+  {
   "alfonso": {
     "name": "Alfonso Garcia",
     "role": "Frontend Architect",
@@ -30,7 +35,8 @@ const teamMembers = {
     "profileImage": './img/team/alfonso.JPG',
     "github": "https://github.com/alfonsog714",
     "twitter": ""
-  },
+  }},
+  {
   "duc": {
     "name": "Duc Vu",
     "role": "Backend Engineer",
@@ -38,7 +44,8 @@ const teamMembers = {
     "profileImage": './img/team/duc.JPG',
     "github": "https://github.com/vud531",
     "twitter": ""
-  },
+  }},
+  {
   "brandon": {
     "name": "Brandon Desselle",
     "role": "Backend Engineer",
@@ -47,4 +54,15 @@ const teamMembers = {
     "github": "",
     "twitter": ""
   }
+}]
+
+const aboutUsSection = document.querySelector('.about-us');
+
+class TeamMember {
+  constructor(member) {
+
+  }
 }
+
+const teamMembers = teamMembersList.map(member => new TeamMember(member));
+// teamMembers.forEach(memberElement => aboutUsSection.appendChild(memberElement));
