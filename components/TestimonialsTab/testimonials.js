@@ -27,7 +27,11 @@ class Testimonials {
 
   // Handler for showing right testimonials
   showRightTestimonial() {
-
+    this.testimonials.forEach(testimonial => {
+      testimonial.style.display = 'none';
+    });
+    this.currentIndex < this.testimonials.length-1 ? this.currentIndex++ : this.currentIndex = 0;
+    this.testimonials[this.currentIndex].style.display = 'block';
   }
 }
 
