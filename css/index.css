@@ -140,7 +140,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
@@ -515,4 +516,36 @@ footer .copyright {
   footer .copyright {
     margin-bottom: 10px;
   }
+}
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 50px auto;
+}
+.about-us .member {
+  display: flex;
+  align-items: flex-start;
+  width: 46%;
+  margin-bottom: 40px;
+}
+.about-us .member img {
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.about-us .member .member-content h6 {
+  font-size: 1.3rem;
+  padding: 15px 0 15px 0;
+  color: #9984d4;
+}
+.about-us .member .member-content p {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.about-us .member .member-content .member-contact a img {
+  width: 30px;
+  margin-right: 10px;
 }
