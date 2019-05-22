@@ -3,12 +3,30 @@ const header = document.querySelector('header');
 // Create div to contain the logo
 const logoElement = document.createElement('div');
 logoElement.classList.add('logo');
+// Create div for hamburger menu
+const hamburgerMenu = document.createElement('div');
+hamburgerMenu.classList.add('hamburger-menu');
+const hamburgerMenuImage = document.createElement('img');
+hamburgerMenuImage.src = './img/menu-button.png';
+hamburgerMenuImage.alt = 'Menu';
+hamburgerMenuImage.setAttribute('style', 'width: 30px; cursor: pointer;')
+hamburgerMenu.setAttribute('style', 'display: none;')
+hamburgerMenu.append(hamburgerMenuImage);
 // Create h2 element for logo text
 const logoText = document.createElement('h2');
 logoText.textContent = 'SleepTracker';
+logoText.style.cursor = 'pointer';
+logoText.addEventListener('click', () => document.location = 'index.html');
 // Create div for navItems, navItemsLeft and navItemsRight
 const navItems = document.createElement('div');
-navItems.classList.add('navItems')
+navItems.classList.add('navItems');
+// Add event listener to add or remove hamburger menu
+window.addEventListener('load', () => {
+  window.innerWidth <= 500 ? navItems.classList.add('navItems-hidden') : null;
+})
+window.addEventListener('resize', () => {
+  window.innerWidth <= 500 ? navItems.classList.add('navItems-hidden') : navItems.classList.remove('navItems-hidden');
+})
 const navItemsLeft = document.createElement('div');
 navItemsLeft.classList.add('navItemsLeft');
 const navItemsRight = document.createElement('div');
@@ -22,7 +40,7 @@ dashboard.textContent = 'Dashboard';
 dashboard.href = '#';
 const about = document.createElement('a');
 about.textContent = 'About';
-about.href = '#';
+about.href = 'about.html';
 const signUp = document.createElement('a');
 signUp.textContent = 'Sign Up';
 signUp.href = '#';
@@ -34,6 +52,7 @@ signIn.href = '#';
 header.append(logoElement);
 header.append(navItems);
 logoElement.append(logoText);
+logoElement.append(hamburgerMenu);
 navItems.append(navItemsLeft);
 navItems.append(navItemsRight);
 // Append nav items
@@ -42,3 +61,9 @@ navItemsLeft.append(dashboard);
 navItemsLeft.append(about);
 navItemsRight.append(signUp);
 navItemsRight.append(signIn);
+
+// Event handlers
+hamburgerMenuImage.addEventListener('click', () => {
+  const navItemsClassList = Array.from(navItems.classList).filter(classItem => classItem === 'navItems-hidden');
+  navItemsClassList.indexOf('navItems-hidden') >= 0 ? navItems.classList.toggle('navItems-hidden') : navItems.classList.add('navItems-hidden');
+});

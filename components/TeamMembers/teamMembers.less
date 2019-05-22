@@ -1,0 +1,54 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 50px auto;
+  @media @mobile {
+    flex-direction: column;
+  }
+  .member {
+    display: flex;
+    align-items: flex-start;
+    width: 46%;
+    margin-bottom: 60px;
+    @media @mobile {
+      width: 100%;
+      align-items: center;
+    }
+    img {
+      width: 100px;
+      border-radius: 60%;
+      margin-right: 20px;
+    }
+    .member-content {
+      font-family: 'Roboto';
+      h5{
+        font-family: 'Roboto';
+        font-weight: 500;
+      }
+      h6 {
+        font-size: 1.3rem;
+        font-family: inherit;
+        font-weight: bold;
+        padding: 15px 0 15px 0;
+        color: @secondaryColor;
+      }
+      p {
+        font-size: 1.3rem;
+        line-height: 2;
+        margin-bottom: 30px;
+      }
+      .member-contact {
+        a img {
+          width: 30px;
+          margin-right: 10px;
+          @media @mobile {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
