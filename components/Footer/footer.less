@@ -39,15 +39,17 @@ footer {
         margin-bottom: 50px;
       }
       input {
-        width: 200px;
-        height: 30px;
+        width: 240px;
+        height: 40px;
         background-color: @white;
         border: 1px solid @tertiaryColor;
         border-radius: 10px;
+        font-size: 13px;
+        padding-left: 10px;
       }
       button {
-        width: 35px;
-        height: 30px;
+        width: 55px;
+        height: 40px;
         background: @secondaryColor;
         border-radius: 10px;
         cursor: pointer;
@@ -55,6 +57,11 @@ footer {
         color: @black;
         line-height: 21px;
         color: @primaryColor;
+        border: none;
+        &:hover {
+          background: @tertiaryColor;
+          color: @white
+        }
       }
     }
   }

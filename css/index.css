@@ -539,15 +539,17 @@ footer .footerTop .social img {
   }
 }
 footer .footerTop .get-updates input {
-  width: 200px;
-  height: 30px;
+  width: 240px;
+  height: 40px;
   background-color: #fff;
   border: 1px solid #8b5fbf;
   border-radius: 10px;
+  font-size: 13px;
+  padding-left: 10px;
 }
 footer .footerTop .get-updates button {
-  width: 35px;
-  height: 30px;
+  width: 55px;
+  height: 40px;
   background: #9984d4;
   border-radius: 10px;
   cursor: pointer;
@@ -555,6 +557,11 @@ footer .footerTop .get-updates button {
   color: #000;
   line-height: 21px;
   color: #592e83;
+  border: none;
+}
+footer .footerTop .get-updates button:hover {
+  background: #8b5fbf;
+  color: #fff;
 }
 @media (max-width: 500px) {
   footer .footerLogo {
@@ -616,6 +623,7 @@ footer .copyright {
   .about-us .member .member-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 }
