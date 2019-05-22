@@ -11,7 +11,7 @@ const teamMembersList = [
   {
     "name": "Elise Spain",
     "role": "User Interface Developer",
-    "description": "Here",
+    "description": "Elise works on the User Interface team",
     "profileImage": './img/team/elise.JPG',
     "social": {"github": "https://github.com/espain16", "twitter": ""},
     "github": "https://github.com/espain16",
@@ -65,7 +65,6 @@ class TeamMember {
     this.memberName = document.createElement('h5');
     this.memberRole = document.createElement('h6');
     this.memberDescription = document.createElement('p');
-    this.memberDescription.setAttribute('style', 'height: 106px;')
     this.memberContact = document.createElement('div');
     this.githubLink = document.createElement('a');
     this.githubLogo = document.createElement('img');
