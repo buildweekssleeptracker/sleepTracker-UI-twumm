@@ -532,9 +532,9 @@ footer .copyright {
   margin-bottom: 40px;
 }
 .about-us .member img {
-  width: 90px;
-  border-radius: 50%;
-  margin-right: 30px;
+  width: 100px;
+  border-radius: 60%;
+  margin-right: 20px;
 }
 .about-us .member .member-content h6 {
   font-size: 1.3rem;
