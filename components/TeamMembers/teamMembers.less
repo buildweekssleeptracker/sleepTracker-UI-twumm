@@ -7,7 +7,6 @@
   margin: 50px auto;
   @media @mobile {
     flex-direction: column;
-    // width: 100%;
   }
   .member {
     display: flex;
@@ -24,13 +23,20 @@
       margin-right: 20px;
     }
     .member-content {
+      font-family: 'Roboto';
+      h5{
+        font-family: 'Roboto';
+        font-weight: 500;
+      }
       h6 {
         font-size: 1.3rem;
+        font-family: inherit;
+        font-weight: bold;
         padding: 15px 0 15px 0;
         color: @secondaryColor;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 2;
       }
       .member-contact {
