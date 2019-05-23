@@ -395,6 +395,9 @@ header {
     padding: 0;
   }
 }
+header .logo {
+  color: #592e83;
+}
 @media (max-width: 500px), (max-width: 800px) {
   header .logo {
     display: flex;
@@ -437,6 +440,11 @@ header .navItems .navItemsRight a {
     padding: 15px;
   }
 }
+header .navItems .navItemsLeft a:hover,
+header .navItems .navItemsRight a:hover {
+  color: #8b5fbf;
+  transition: color 0.5s ease-in-out;
+}
 @media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft,
   header .navItems .navItemsRight {
@@ -451,6 +459,13 @@ header .navItems .navItemsLeft {
   header .navItems .navItemsLeft {
     padding-left: 0;
   }
+}
+header .navItems .navItemsRight a:last-child {
+  color: #8b5fbf;
+}
+header .navItems .navItemsRight a:last-child:hover {
+  color: #9984d4;
+  transition: color 0.5s ease-in-out;
 }
 header .navItems-hidden {
   display: none;
