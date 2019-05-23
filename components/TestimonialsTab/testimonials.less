@@ -1,9 +1,6 @@
 .container {
   .testimonials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    .flex(center, center, row);
     width: 70%;
     height: 300px;
     position: relative;
@@ -44,10 +41,7 @@
       transform: translate(0, -50%);
     }
     .testimonial {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
+      .flex(space-around, center, column);
       width: 60%;
       text-align: center;
       display: none;

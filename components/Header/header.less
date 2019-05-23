@@ -1,7 +1,5 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .flex(space-between, center);
   padding: 15px;
   line-height: 1.4;
   border-bottom: 1px solid @secondaryColor;
@@ -13,9 +11,7 @@ header {
   }
   .logo {
     @media @mobile, @tablet {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      .flex(space-between, center);
       padding: 15px;
     }
     .hamburger-menu {
@@ -25,8 +21,7 @@ header {
     }
   }
   .navItems {
-    display: flex;
-    justify-content: space-between;
+    .flex(space-between);
     width: 100%;
     @media @mobile, @tablet {
       flex-direction: column;

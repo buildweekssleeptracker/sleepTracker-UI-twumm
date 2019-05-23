@@ -182,9 +182,9 @@ img {
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   color: #fff;
   font-family: 'Roboto';
 }
@@ -236,13 +236,15 @@ img {
   margin: 50px auto;
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   font-family: 'Roboto';
 }
 .container .features .features-tabs {
   display: flex;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: none;
   width: 90%;
 }
 @media (max-width: 800px) {
@@ -262,9 +264,9 @@ img {
 .container .features #track,
 .container .features #play {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   height: 240px;
   width: 22%;
@@ -311,6 +313,8 @@ img {
 .container .measure {
   display: flex;
   justify-content: space-around;
+  align-items: none;
+  flex-direction: none;
   margin: 30px auto;
   padding: 0 5%;
   background: #FAFAFB;
@@ -323,8 +327,9 @@ img {
 .container .measure #measureText {
   padding-right: 50px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  align-items: none;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
   .container .measure #measureText {
@@ -376,6 +381,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: none;
   padding: 15px;
   line-height: 1.4;
   border-bottom: 1px solid #9984d4;
@@ -391,8 +397,9 @@ header {
 @media (max-width: 500px), (max-width: 800px) {
   header .logo {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: none;
     padding: 15px;
   }
 }
@@ -404,6 +411,8 @@ header {
 header .navItems {
   display: flex;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: none;
   width: 100%;
 }
 @media (max-width: 500px), (max-width: 800px) {
@@ -495,9 +504,9 @@ header .navItems-hidden {
 }
 .container .testimonials .testimonial {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   width: 60%;
   text-align: center;
   display: none;
@@ -616,6 +625,8 @@ footer .copyright {
 .about-us {
   display: flex;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: none;
   flex-direction: row;
   flex-wrap: wrap;
   width: 85%;
