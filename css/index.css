@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -182,9 +183,9 @@ img {
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   color: #fff;
   font-family: 'Roboto';
 }
@@ -198,15 +199,22 @@ img {
   margin-top: 10%;
   font-family: inherit;
   font-size: 4rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .container .cta h2 {
     margin-top: 20%;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    width: 100%;
   }
 }
 .container .cta h5 {
   font-family: inherit;
+}
+@media (max-width: 500px) {
+  .container .cta h5 {
+    font-size: 1.6rem;
+  }
 }
 .container .cta button {
   width: 145px;
@@ -220,19 +228,31 @@ img {
   color: #592e83;
   font-family: inherit;
   border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .cta button:hover {
+  color: #9984d4;
 }
 .container .features {
   margin: 50px auto;
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   font-family: 'Roboto';
 }
 .container .features .features-tabs {
   display: flex;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: none;
   width: 90%;
+}
+@media (max-width: 800px) {
+  .container .features .features-tabs {
+    flex-flow: wrap;
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .container .features .features-tabs {
@@ -245,14 +265,24 @@ img {
 .container .features #track,
 .container .features #play {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   height: 240px;
   width: 22%;
   background: #FAFAFB;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 800px) {
+  .container .features #sleep,
+  .container .features #schedule,
+  .container .features #track,
+  .container .features #play {
+    width: 48%;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 500px) {
   .container .features #sleep,
@@ -284,11 +314,13 @@ img {
 .container .measure {
   display: flex;
   justify-content: space-around;
+  align-items: none;
+  flex-direction: none;
   margin: 30px auto;
   padding: 0 5%;
   background: #FAFAFB;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .container .measure {
     flex-direction: column;
   }
@@ -296,8 +328,9 @@ img {
 .container .measure #measureText {
   padding-right: 50px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  align-items: none;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
   .container .measure #measureText {
@@ -309,26 +342,31 @@ img {
   font-family: 'Roboto';
   font-weight: bold;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .container .measure #measureText h3 {
-    margin-bottom: 30px;
+    margin: 30px 0;
   }
 }
 .container .measure #measureText article {
-  font-family: 'inherit';
+  font-family: 'Roboto';
 }
 .container .measure #measureText article h5 {
-  font-family: 'inherit';
+  font-family: 'Roboto';
   font-weight: bold;
   margin-bottom: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .container .measure #measureText article {
     margin-bottom: 30px;
   }
 }
 .container .measure #measureImage {
   padding: 15px 0 15px 15px;
+}
+@media (max-width: 800px) {
+  .container .measure #measureImage {
+    margin: auto;
+  }
 }
 @media (max-width: 500px) {
   .container .measure #measureImage {
@@ -344,11 +382,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: none;
   padding: 15px;
   line-height: 1.4;
   border-bottom: 1px solid #9984d4;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header {
     flex-direction: column;
     margin: 0;
@@ -356,15 +395,16 @@ header {
     padding: 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .logo {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: none;
     padding: 15px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .logo .hamburger-menu {
     display: block !important;
   }
@@ -372,9 +412,12 @@ header {
 header .navItems {
   display: flex;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: none;
   width: 100%;
+  background: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems {
     flex-direction: column;
   }
@@ -386,7 +429,7 @@ header .navItems .navItemsRight a {
   text-decoration: none;
   color: inherit;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft a,
   header .navItems .navItemsRight a {
     border-top: 1px solid #9984d4;
@@ -394,7 +437,7 @@ header .navItems .navItemsRight a {
     padding: 15px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft,
   header .navItems .navItemsRight {
     display: flex;
@@ -404,7 +447,7 @@ header .navItems .navItemsRight a {
 header .navItems .navItemsLeft {
   padding-left: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navItems .navItemsLeft {
     padding-left: 0;
   }
@@ -423,8 +466,11 @@ header .navItems-hidden {
   overflow: hidden;
   margin: 16px auto;
   font-family: 'Roboto';
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .container .testimonials {
     width: 100%;
   }
@@ -461,9 +507,9 @@ header .navItems-hidden {
 }
 .container .testimonials .testimonial {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   width: 60%;
   text-align: center;
   display: none;
@@ -490,16 +536,22 @@ footer {
   border-top: 1px solid #9984d4;
   padding-bottom: 20px;
 }
+@media (max-width: 500px), (max-width: 800px) {
+  footer {
+    padding-top: 70px;
+  }
+}
 footer .footerTop {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin-top: 40px;
+  padding-top: 40px;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footerTop {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 footer .footerTop .social {
@@ -507,7 +559,7 @@ footer .footerTop .social {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footerTop .social {
     width: 100%;
     justify-content: space-around;
@@ -519,21 +571,29 @@ footer .footerTop .social img {
   width: 50px;
   height: 50px;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footerTop .get-updates {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 footer .footerTop .get-updates input {
-  width: 200px;
-  height: 30px;
+  width: 240px;
+  height: 40px;
   background-color: #fff;
   border: 1px solid #8b5fbf;
   border-radius: 10px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+@media (max-width: 800px) {
+  footer .footerTop .get-updates input {
+    width: 280px;
+  }
 }
 footer .footerTop .get-updates button {
-  width: 35px;
-  height: 30px;
+  width: 55px;
+  height: 40px;
   background: #9984d4;
   border-radius: 10px;
   cursor: pointer;
@@ -541,18 +601,27 @@ footer .footerTop .get-updates button {
   color: #000;
   line-height: 21px;
   color: #592e83;
+  border: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  footer .footerTop .get-updates button {
+    width: 75px;
+  }
+}
+footer .footerTop .get-updates button:hover {
+  background: #8b5fbf;
+  color: #fff;
+}
+@media (max-width: 500px), (max-width: 800px) {
   footer .footerLogo {
     margin-bottom: 30px;
   }
 }
 footer .copyright {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: 'Roboto';
-  font-size: 1rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .copyright {
     padding-bottom: 10px;
   }
@@ -560,14 +629,17 @@ footer .copyright {
 .about-us {
   display: flex;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: none;
   flex-direction: row;
   flex-wrap: wrap;
   width: 85%;
   margin: 50px auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us {
     flex-direction: column;
+    margin: 20px auto;
   }
 }
 .about-us .member {
@@ -576,10 +648,12 @@ footer .copyright {
   width: 46%;
   margin-bottom: 60px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us .member {
     width: 100%;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
   }
 }
 .about-us .member img {
@@ -587,8 +661,30 @@ footer .copyright {
   border-radius: 60%;
   margin-right: 20px;
 }
+@media (max-width: 800px), (max-width: 500px) {
+  .about-us .member img {
+    margin: 0 0 20px 0;
+  }
+}
 .about-us .member .member-content {
   font-family: 'Roboto';
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .about-us .member .member-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about-us .member .member-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .about-us .member .member-content h5 {
   font-family: 'Roboto';
@@ -605,13 +701,26 @@ footer .copyright {
   font-size: 1.3rem;
   line-height: 2;
   margin-bottom: 30px;
+  height: 107px;
+  text-align: justify;
+}
+@media (max-width: 800px) {
+  .about-us .member .member-content p {
+    width: 80%;
+  }
+}
+@media (max-width: 800px), (max-width: 500px) {
+  .about-us .member .member-content p {
+    height: auto;
+    margin-bottom: 0;
+  }
 }
 .about-us .member .member-content .member-contact a img {
   width: 30px;
   margin-right: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us .member .member-content .member-contact a img {
-    margin-top: 20px;
+    margin-top: 0;
   }
 }

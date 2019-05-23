@@ -6,20 +6,24 @@ footer {
   height: 200px;
   border-top: 1px solid @secondaryColor;
   padding-bottom: 20px;
+  @media @mobile, @tablet {
+    padding-top: 70px;
+  }
   .footerTop {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin-top: 40px;
-    @media @mobile {
+    padding-top: 40px;
+    @media @mobile, @tablet {
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
     .social {
       width: 30%;
       display: flex;
       justify-content: space-between;
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 100%;
         justify-content: space-around;
         margin-top: 30px;
@@ -31,19 +35,25 @@ footer {
       }
     }
     .get-updates {
-      @media @mobile {
-        margin-bottom: 30px;
+      @media @mobile, @tablet {
+        margin-top: 30px;
+        margin-bottom: 50px;
       }
       input {
-        width: 200px;
-        height: 30px;
+        width: 240px;
+        height: 40px;
         background-color: @white;
         border: 1px solid @tertiaryColor;
         border-radius: 10px;
+        font-size: 13px;
+        padding-left: 10px;
+        @media @tablet {
+          width: 280px;
+        }
       }
       button {
-        width: 35px;
-        height: 30px;
+        width: 55px;
+        height: 40px;
         background: @secondaryColor;
         border-radius: 10px;
         cursor: pointer;
@@ -51,19 +61,26 @@ footer {
         color: @black;
         line-height: 21px;
         color: @primaryColor;
+        border: none;
+        @media @tablet {
+          width: 75px;
+        }
+        &:hover {
+          background: @tertiaryColor;
+          color: @white
+        }
       }
     }
   }
   .footerLogo {
-    @media @mobile {
+    @media @mobile, @tablet {
       margin-bottom: 30px;
     }
   }
   .copyright {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Roboto';
-    font-size: 1rem;
-    @media @mobile {
+    @media @mobile, @tablet {
       padding-bottom: 10px;
     }
   }

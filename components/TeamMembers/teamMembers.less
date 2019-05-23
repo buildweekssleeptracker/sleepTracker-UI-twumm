@@ -1,29 +1,47 @@
 .about-us {
-  display: flex;
-  justify-content: space-between;
+  .flex(space-between);
   flex-direction: row;
   flex-wrap: wrap;
   width: 85%;
   margin: 50px auto;
-  @media @mobile {
+  @media @tablet, @mobile {
     flex-direction: column;
+    margin: 20px auto;
   }
   .member {
     display: flex;
     align-items: flex-start;
     width: 46%;
     margin-bottom: 60px;
-    @media @mobile {
+    @media @tablet, @mobile {
       width: 100%;
+      flex-direction: column;
       align-items: center;
+      margin-bottom: 50px;
     }
     img {
       width: 100px;
       border-radius: 60%;
       margin-right: 20px;
+      @media @tablet, @mobile {
+        margin: 0 0 20px 0;
+      }
     }
     .member-content {
       font-family: 'Roboto';
+      width: 100%;
+      @media @tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
       h5{
         font-family: 'Roboto';
         font-weight: 500;
@@ -39,13 +57,22 @@
         font-size: 1.3rem;
         line-height: 2;
         margin-bottom: 30px;
+        height: 107px;
+        text-align: justify;
+        @media @tablet {
+          width: 80%;
+        }
+        @media @tablet, @mobile {
+          height: auto;
+          margin-bottom: 0;
+        }
       }
       .member-contact {
         a img {
           width: 30px;
           margin-right: 10px;
-          @media @mobile {
-            margin-top: 20px;
+          @media @tablet, @mobile {
+            margin-top: 0;
           }
         }
       }

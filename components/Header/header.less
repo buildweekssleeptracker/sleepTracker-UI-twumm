@@ -1,37 +1,32 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .flex(space-between, center);
   padding: 15px;
   line-height: 1.4;
   border-bottom: 1px solid @secondaryColor;
-  @media @mobile {
+  @media @mobile, @tablet {
     flex-direction: column;
     margin: 0;
     align-items: normal;
     padding: 0;
   }
   .logo {
-    @media @mobile {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    @media @mobile, @tablet {
+      .flex(space-between, center);
       padding: 15px;
     }
     .hamburger-menu {
-      @media @mobile {
+      @media @mobile, @tablet {
         display: block !important;
       }
     }
   }
   .navItems {
-    display: flex;
-    justify-content: space-between;
+    .flex(space-between);
     width: 100%;
-    @media @mobile {
+    background: white;
+    @media @mobile, @tablet {
+      // position: absolute;
       flex-direction: column;
-      
-      
     }
     .navItemsLeft,
     .navItemsRight {
@@ -40,20 +35,20 @@ header {
         margin-right: 15px;
         text-decoration: none;
         color: inherit;
-        @media @mobile {
+        @media @mobile, @tablet {
           border-top: 1px solid @secondaryColor;
           width: 100%;
           padding: 15px;
         }
       }
-      @media @mobile {
+      @media @mobile, @tablet {
         display: flex;
         flex-direction: column;
       }
     }
     .navItemsLeft {
       padding-left: 30px;
-      @media @mobile {
+      @media @mobile, @tablet {
         padding-left: 0;
       }
     }

@@ -22,10 +22,10 @@ const navItems = document.createElement('div');
 navItems.classList.add('navItems');
 // Add event listener to add or remove hamburger menu
 window.addEventListener('load', () => {
-  window.innerWidth <= 500 ? navItems.classList.add('navItems-hidden') : null;
+  window.innerWidth <= 800 ? navItems.classList.add('navItems-hidden') : null;
 })
 window.addEventListener('resize', () => {
-  window.innerWidth <= 500 ? navItems.classList.add('navItems-hidden') : navItems.classList.remove('navItems-hidden');
+  window.innerWidth <= 800 ? navItems.classList.add('navItems-hidden') : navItems.classList.remove('navItems-hidden');
 })
 const navItemsLeft = document.createElement('div');
 navItemsLeft.classList.add('navItemsLeft');
@@ -43,10 +43,10 @@ about.textContent = 'About';
 about.href = 'about.html';
 const signUp = document.createElement('a');
 signUp.textContent = 'Sign Up';
-signUp.href = '#';
+signUp.href = 'https://festive-nobel-517193.netlify.com/';
 const signIn = document.createElement('a');
 signIn.textContent = 'Sign In';
-signIn.href = '#';
+signIn.href = 'https://festive-nobel-517193.netlify.com/';
 
 // Append elements to html
 header.append(logoElement);
@@ -64,6 +64,19 @@ navItemsRight.append(signIn);
 
 // Event handlers
 hamburgerMenuImage.addEventListener('click', () => {
+  
   const navItemsClassList = Array.from(navItems.classList).filter(classItem => classItem === 'navItems-hidden');
-  navItemsClassList.indexOf('navItems-hidden') >= 0 ? navItems.classList.toggle('navItems-hidden') : navItems.classList.add('navItems-hidden');
+  navItemsClassList.indexOf('navItems-hidden') >= 0 ? 
+    // (
+      // TweenMax.to(".navItems", 0.75, {y: "-40px", ease:Power2.easeInOut}),
+      navItems.classList.toggle('navItems-hidden')
+      
+      // TweenMax.to(".navItems", 0.75, {y: "5px", ease:Power2.easeInOut})
+    // )
+  : 
+  // (
+      navItems.classList.add('navItems-hidden')
+      // TweenMax.to(".navItems", 0.75, {y: "-40px", ease:Power2.easeInOut})
+    // );
+
 });
