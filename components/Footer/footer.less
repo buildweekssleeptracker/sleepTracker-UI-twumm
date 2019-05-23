@@ -6,7 +6,7 @@ footer {
   height: 200px;
   border-top: 1px solid @secondaryColor;
   padding-bottom: 20px;
-  @media @mobile {
+  @media @mobile, @tablet {
     padding-top: 70px;
   }
   .footerTop {
@@ -14,7 +14,7 @@ footer {
     justify-content: space-between;
     width: 90%;
     padding-top: 40px;
-    @media @mobile {
+    @media @mobile, @tablet {
       flex-direction: column;
       align-items: center;
     }
@@ -22,7 +22,7 @@ footer {
       width: 30%;
       display: flex;
       justify-content: space-between;
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 100%;
         justify-content: space-around;
         margin-top: 30px;
@@ -34,7 +34,7 @@ footer {
       }
     }
     .get-updates {
-      @media @mobile {
+      @media @mobile, @tablet {
         margin-top: 30px;
         margin-bottom: 50px;
       }
@@ -46,6 +46,10 @@ footer {
         border-radius: 10px;
         font-size: 13px;
         padding-left: 10px;
+        @media @tablet {
+          width: 280px;
+          // height: 50px;
+        }
       }
       button {
         width: 55px;
@@ -58,6 +62,10 @@ footer {
         line-height: 21px;
         color: @primaryColor;
         border: none;
+        @media @tablet {
+          width: 75px;
+          // height: 50px;
+        }
         &:hover {
           background: @tertiaryColor;
           color: @white
@@ -66,15 +74,14 @@ footer {
     }
   }
   .footerLogo {
-    @media @mobile {
+    @media @mobile, @tablet {
       margin-bottom: 30px;
     }
   }
   .copyright {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Roboto';
-    font-size: 1rem;
-    @media @mobile {
+    @media @mobile, @tablet {
       padding-bottom: 10px;
     }
   }
