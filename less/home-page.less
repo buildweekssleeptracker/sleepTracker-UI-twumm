@@ -114,9 +114,8 @@
     margin: 30px auto;
     padding: 0 5%;
     background: @optionalBackground;
-    @media @mobile {
+    @media @tablet, @mobile {
       flex-direction: column;
-      // padding: 0;
     }
     #measureText {
       padding-right: 50px;
@@ -130,8 +129,8 @@
       h3 {
         font-family: 'Roboto';
         font-weight: bold;
-        @media @mobile {
-          margin-bottom: 30px;
+        @media @tablet, @mobile {
+          margin: 30px 0;
         }
       }
       article {
@@ -141,13 +140,16 @@
           margin-bottom: 10px;
         }
         font-family: 'Roboto';
-        @media @mobile {
+        @media @tablet, @mobile {
           margin-bottom: 30px;
         }
       }
     }
     #measureImage {
       padding: 15px 0 15px 15px;
+      @media @tablet {
+        margin: auto;
+      }
       @media @mobile {
         order: 0;
         padding: 0;
