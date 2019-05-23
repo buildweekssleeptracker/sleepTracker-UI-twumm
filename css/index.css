@@ -227,6 +227,7 @@ img {
   color: #592e83;
   font-family: inherit;
   border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container .cta button:hover {
   color: #9984d4;
@@ -269,6 +270,7 @@ img {
   width: 22%;
   background: #FAFAFB;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 500px) {
   .container .features #sleep,
