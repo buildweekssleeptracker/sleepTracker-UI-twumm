@@ -460,6 +460,13 @@ header .navItems .navItemsLeft {
     padding-left: 0;
   }
 }
+header .navItems .navItemsRight a:last-child {
+  color: #8b5fbf;
+}
+header .navItems .navItemsRight a:last-child:hover {
+  color: #9984d4;
+  transition: color 0.5s ease-in-out;
+}
 header .navItems-hidden {
   display: none;
 }
