@@ -641,6 +641,12 @@ footer .copyright {
     padding-bottom: 10px;
   }
 }
+.teamTitle {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 3rem;
+  font-family: 'Roboto';
+}
 .about-us {
   display: flex;
   justify-content: space-between;
