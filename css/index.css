@@ -632,7 +632,7 @@ footer .copyright {
   width: 85%;
   margin: 50px auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us {
     flex-direction: column;
     margin: 20px auto;
@@ -644,7 +644,7 @@ footer .copyright {
   width: 46%;
   margin-bottom: 60px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us .member {
     width: 100%;
     flex-direction: column;
@@ -657,13 +657,22 @@ footer .copyright {
   border-radius: 60%;
   margin-right: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us .member img {
     margin: 0 0 20px 0;
   }
 }
 .about-us .member .member-content {
   font-family: 'Roboto';
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .about-us .member .member-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .about-us .member .member-content {
@@ -689,8 +698,14 @@ footer .copyright {
   line-height: 2;
   margin-bottom: 30px;
   height: 107px;
+  text-align: justify;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .about-us .member .member-content p {
+    width: 80%;
+  }
+}
+@media (max-width: 800px), (max-width: 500px) {
   .about-us .member .member-content p {
     height: auto;
     margin-bottom: 0;
@@ -700,7 +715,7 @@ footer .copyright {
   width: 30px;
   margin-right: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .about-us .member .member-content .member-contact a img {
     margin-top: 0;
   }
