@@ -468,6 +468,7 @@ header .navItems-hidden {
   font-family: 'Roboto';
   margin-top: 70px;
   margin-bottom: 70px;
+  height: auto;
 }
 @media (max-width: 800px), (max-width: 500px) {
   .container .testimonials {
