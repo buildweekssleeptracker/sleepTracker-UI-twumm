@@ -272,15 +272,6 @@ img {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media (max-width: 500px) {
-  .container .features #sleep,
-  .container .features #schedule,
-  .container .features #track,
-  .container .features #play {
-    width: 80%;
-    margin: 20px;
-  }
-}
 @media (max-width: 800px) {
   .container .features #sleep,
   .container .features #schedule,
@@ -288,6 +279,15 @@ img {
   .container .features #play {
     width: 48%;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .container .features #sleep,
+  .container .features #schedule,
+  .container .features #track,
+  .container .features #play {
+    width: 80%;
+    margin: 20px;
   }
 }
 .container .features #sleep h5,
