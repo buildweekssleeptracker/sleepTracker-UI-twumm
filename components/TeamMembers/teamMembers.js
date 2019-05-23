@@ -11,7 +11,7 @@ const teamMembersList = [
   {
     "name": "Elise Spain",
     "role": "User Interface Developer",
-    "description": "Elise works on the User Interface team",
+    "description": "Elise specialises in user interface designs. She has years of experience working in web development with deep expertise and hands on experience with Web Applications and programming languages such as HTML, CSS, JavaScript.",
     "profileImage": './img/team/elise.JPG',
     "social": {"github": "https://github.com/espain16", "twitter": ""},
     "github": "https://github.com/espain16",
@@ -20,7 +20,7 @@ const teamMembersList = [
   {
     "name": "Cesar Aponte",
     "role": "User Interface Developer",
-    "description": "Here",
+    "description": "Cesar has years of experience working in web development with deep expertise and hands on experience with Web Applications and programming languages such as HTML, CSS, JavaScript.",
     "profileImage": './img/team/cesar.JPG',
     "social": {"github": "https://github.com/espain16", "twitter": ""},
     "github": "https://github.com/espain16",
@@ -29,7 +29,7 @@ const teamMembersList = [
   {
     "name": "Alfonso Garcia",
     "role": "Frontend Architect",
-    "description": "Here",
+    "description": "Alfonso is the master of the React world. He is our lead Frontend architect. He develops at the speed of light and is not your everyday developer. Out of work, he likes to mentor other developers.",
     "profileImage": './img/team/alfonso.JPG',
     "social": {"github": "https://github.com/alfonsog714", "twitter": ""},
     "github": "https://github.com/alfonsog714",
@@ -38,7 +38,7 @@ const teamMembersList = [
   {
     "name": "Duc Vu",
     "role": "Backend Engineer",
-    "description": "Here",
+    "description": "As part of the Backend engineers, Duc provides reliable APIs for our flagship application. He has 2 years of experience to make every backend reliable. He is security-concious and always wants to learn new things.",
     "profileImage": './img/team/duc.JPG',
     "social": {"github": "https://github.com/vud531", "twitter": ""},
     "github": "https://github.com/vud531",
@@ -47,7 +47,7 @@ const teamMembersList = [
   {
     "name": "Brandon Desselle",
     "role": "Backend Engineer",
-    "description": "Here",
+    "description": "With 4 years of experience as an engineer, Brandon works as part of the Backend engineers who ensure our application is always secure and reliable to use by our users.",
     "profileImage": './img/team/brandon.JPG',
     "social": {"github": "", "twitter": ""}
   }
