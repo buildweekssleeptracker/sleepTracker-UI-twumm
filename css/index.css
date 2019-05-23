@@ -549,6 +549,7 @@ footer .footerTop {
   footer .footerTop {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 footer .footerTop .social {
