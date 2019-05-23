@@ -10,6 +10,7 @@ header {
     padding: 0;
   }
   .logo {
+    color: @primaryColor;
     @media @mobile, @tablet {
       .flex(space-between, center);
       padding: 15px;
@@ -39,6 +40,10 @@ header {
           border-top: 1px solid @secondaryColor;
           width: 100%;
           padding: 15px;
+        }
+        &:hover {
+          color: @tertiaryColor;
+          transition: color 0.5s ease-in-out;
         }
       }
       @media @mobile, @tablet {
