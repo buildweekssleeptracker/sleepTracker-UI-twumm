@@ -64,6 +64,19 @@ navItemsRight.append(signIn);
 
 // Event handlers
 hamburgerMenuImage.addEventListener('click', () => {
+  
   const navItemsClassList = Array.from(navItems.classList).filter(classItem => classItem === 'navItems-hidden');
-  navItemsClassList.indexOf('navItems-hidden') >= 0 ? navItems.classList.toggle('navItems-hidden') : navItems.classList.add('navItems-hidden');
+  navItemsClassList.indexOf('navItems-hidden') >= 0 ? 
+    (
+      TweenMax.to(".navItems", 0.75, {y: "-40px", ease:Power2.easeInOut}),
+      navItems.classList.toggle('navItems-hidden'), 
+      
+      TweenMax.to(".navItems", 0.75, {y: "5px", ease:Power2.easeInOut})
+    )
+  : 
+  (
+      navItems.classList.add('navItems-hidden'),
+      TweenMax.to(".navItems", 0.75, {y: "-40px", ease:Power2.easeInOut})
+    );
+
 });
