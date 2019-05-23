@@ -115,4 +115,3 @@ class TeamMember {
 
 const teamMembers = teamMembersList.map(member => new TeamMember(member));
 teamMembers.forEach(memberElement => aboutUsSection.appendChild(memberElement.memberDiv));
-teamMembers.forEach(memberElement => console.log(memberElement));
