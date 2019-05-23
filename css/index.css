@@ -456,7 +456,7 @@ header .navItems-hidden {
   margin-top: 70px;
   margin-bottom: 70px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .container .testimonials {
     width: 100%;
   }
