@@ -198,6 +198,7 @@ img {
   margin-top: 10%;
   font-family: inherit;
   font-size: 4rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .container .cta h2 {
@@ -243,6 +244,12 @@ img {
   justify-content: space-between;
   width: 90%;
 }
+@media (max-width: 800px) {
+  .container .features .features-tabs {
+    flex-flow: wrap;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .container .features .features-tabs {
     flex-direction: column;
@@ -270,6 +277,15 @@ img {
   .container .features #play {
     width: 80%;
     margin: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .container .features #sleep,
+  .container .features #schedule,
+  .container .features #track,
+  .container .features #play {
+    width: 48%;
+    margin-bottom: 30px;
   }
 }
 .container .features #sleep h5,
